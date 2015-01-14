@@ -27,7 +27,7 @@ function translateString( str ) {
   return translated.trim();
 }
 
-
+//more comments
 $(document).ready(function() {
 
   var form = $("#form-translate");
