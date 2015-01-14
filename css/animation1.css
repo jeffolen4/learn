@@ -1,0 +1,51 @@
+.row {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */
+  /* -webkit-animation: spin 2s linear .5s infinite alternate; /* Chrome, Safari, Opera */
+  animation: myfirst 5s linear 2s infinite alternate;
+
+}
+
+/* Chrome, Safari, Opera */
+/*@-webkit-keyframes myfirst {
+  0%   {background:red; left:500px; top:500px; -webkit-transform: rotate(0deg); }
+  25%  {background:yellow; left:400px; top:400px; -webkit-transform: rotate(90deg); }
+  50%  {background:blue; left:500px; top:0px; -webkit-transform: rotate(180deg); }
+  75%  {background:green;left:0px; top:0px; -webkit-transform: rotate(270deg); }
+  100% {background:red; left:100px; top:0px; -webkit-transform: rotate(360deg); }
+
+}*/
+
+@-webkit-keyframes myfirst {
+  0%   {background:red; left:500px; top:500px; -webkit-transform: rotate(0deg); }
+  50%  {background:yellow; left:625px; top:460px; -webkit-transform: rotate(90deg); }
+  100%  {background:yellow; left:750px; top:500px; -webkit-transform: rotate(180deg); }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    } to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+/* Chrome, Safari, Opera */
+/*@-webkit-keyframes myfirst {
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:100px; top:100px;}
+  50%  {background:blue; left:200px; top:0px;}
+  75%  {background:green;left:100px; top:100px;}
+  100% {background:red; left:0px; top:0px;}
+} */
+
+/* Standard syntax */
+@keyframes myfirst {
+  0%   {background:red; left:0px; top:0px;}
+  25%  {background:yellow; left:200px; top:0px;}
+  50%  {background:blue; left:200px; top:200px;}
+  75%  {background:green; left:0px; top:200px;}
+  100% {background:red; left:0px; top:0px;}
+}

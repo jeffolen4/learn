@@ -1,0 +1,28 @@
+str.match('[aeiou]')
+["e"]
+str
+  "test ouch car medical stuff ruff bells dwells"
+str.match(\b[aeiou])
+VM143:762 Uncaught SyntaxError: Unexpected token ILLEGAL
+str.match(/\b[aeiou]/)
+["o"]
+str.match(/\b[aeiou]/g)
+["o"]
+str.match(/\b[aeiou]*/)
+[""]
+str.match(/\b[aeiou]+/)
+["ou"]
+str.match(/\b[aeiou]+\S*/)
+["ouch"]
+str.match(/\b[aeiou]\S*/)
+["ouch"]
+str.match(/\b([aeiou])\S*/)
+["ouch", "o"]
+str.match(/\b([aeiou]+)\S*/)
+["ouch", "ou"]
+str.match(/\b([^aeiou]+)\S*/)
+["test", "t"]
+str.match(/\b([^aeiou]+)\S*/g)
+["test", " ouch", " car", " medical", " stuff", " ruff", " bells", " dwells"]
+str.match(/\b([^ aeiou]+)\S*/g)
+["test", "car", "medical", "stuff", "ruff", "bells", "dwells"]

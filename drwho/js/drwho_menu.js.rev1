@@ -1,0 +1,52 @@
+$(document).ready( function() {
+
+  $(".mnu_trigger").hover(
+    function() {
+      $(".mnu_text").slideUp();
+      $(this).next().slideDown();
+    } ,
+    function() {
+      $(".mnu_text").slideUp();
+    });
+
+  $("#add1").click( function() {
+    $("ul").prepend('<li class="tribble"><img src="img/tribble.jpg" width=50px height=50px></li>')
+    $(".tribbles").children("li").first().click( function() {
+      console.log("remove 1");
+      $(this).remove();
+    });
+  });
+
+  $("#add5").click( function() {
+    $("ul").prepend('<li class="tribble"><img src="img/tribble.jpg" width=50px height=50px></li>')
+    $(".tribbles").children("li").first().click( function() {
+      console.log("remove 1");
+      $(this).remove();
+    });
+    $("ul").prepend('<li class="tribble"><img src="img/tribble.jpg" width=50px height=50px></li>')
+    $(".tribbles").children("li").first().click( function() {
+      console.log("remove 1");
+      $(this).remove();
+    });
+    $("ul").prepend('<li class="tribble"><img src="img/tribble.jpg" width=50px height=50px></li>')
+    $(".tribbles").children("li").first().click( function() {
+      console.log("remove 1");
+      $(this).remove();
+    });
+    $("ul").prepend('<li class="tribble"><img src="img/tribble.jpg" width=50px height=50px></li>')
+    $(".tribbles").children("li").first().click( function() {
+      console.log("remove 1");
+      $(this).remove();
+    });
+    $("ul").prepend('<li class="tribble"><img src="img/tribble.jpg" width=50px height=50px></li>')
+    $(".tribbles").children("li").first().click( function() {
+      console.log("remove 1");
+      $(this).remove();
+    });
+  });
+
+  $(".tribble").click( function() {
+    $(this).remove();
+  });
+
+});

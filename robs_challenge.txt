@@ -1,0 +1,3 @@
+- Make a vertical menu of links
+- When the link is clicked on the link slides down, and a description opens above it
+- The description should slide in

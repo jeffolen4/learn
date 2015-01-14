@@ -1,0 +1,65 @@
+h1 {
+color: blue;
+text-align: center;
+}
+
+h2 {
+  color: green;
+  font-style: italic;
+  text-align: center;
+}
+
+p.plain {
+  font-family: sans-serif;
+}
+
+ul {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+p.intro {
+  font-family: courier;
+  width: 50%;
+  font-style: italic;
+}
+
+p.author {
+  width: 75%;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.important {
+  color: red;
+}
+
+p.important {
+  color:yellow;
+}
+
+.column1 {
+  width: 30%;
+  height: 40%;
+  padding: 10px;
+  border: 2px solid blue;
+  margin: 5px;
+  float: left;
+  background-color: grey;
+}
+
+.column2 {
+  width: 30%;
+  height: 40%;
+  padding: 10px;
+  border: 2px solid blue;
+  margin: 5px;
+  float: left;
+  background-color: yellow;
+}
+
+.list {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

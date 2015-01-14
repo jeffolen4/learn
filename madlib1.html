@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/madlib1.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-2.1.3.js"></script>
+x  <script src="js/madlib1.js"></script>
+  <!--  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+-->
+<title>My Madlib #1</title>
+</head>
+<body>
+  <div class = "container">
+    <div class = "row">
+      <button class="btn" id="btn-reset">Reset</button>
+      <button class="btn" id="btn-blue">Blue</button>
+      <button class="btn" id="btn-green">Green</button>
+      <button class="btn" id="btn-black">Black</button>
+    </div>
+    <div class = "row">
+      <h1>Silly Madlib</h1>
+      <form class="form-horizontal" id="form-madlib">
+        <div class="form-group">
+          <label class="col-sm-2" for="properName1">Proper name</label>
+          <input class="col-sm-10" type="text" class="form-control" id="properName1" placeholder="proper name">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-properName1">A proper name must be entered.</div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2" for="noun1">Noun</label>
+          <input class="col-sm-10" type="text" class="form-control" id="noun1" placeholder="noun">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-noun1">A noun must be entered.</div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2" for="verb1">Verb (past tense)</label>
+          <input class="col-sm-10" type="text" class="form-control" id="verb1" placeholder="verb">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-verb1">A verb name must be entered.</div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2" for="adjective1">Adjective</label>
+          <input class="col-sm-10" type="text" class="form-control" id="adjective1" placeholder="adjective">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-adjective1"></div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2" for="exclamation1">Exclamation</label>
+          <input class="col-sm-10" type="text" class="form-control" id="exclamation1" placeholder="exclamation">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-exclamation1"></div>
+        </div>
+        <button type="submit" name="submit">Show the story</button>
+      </form>
+    </div>
+
+    <div class="row">
+      <h2>Completed Story</h2>
+      <div id="story-text">
+        <p>The Doctor and his companion <span class="outName1"></span> having completed questioning the
+          <span class="outAdjective1"></span> Ood commander got in the <span class="outNoun1"></span> and
+          quickly <span class="outVerb1"></span> back to Earth. Once on the ground <span class="outName1"></span>
+          yelled, "<span class="outExclamation1"></span>!"</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

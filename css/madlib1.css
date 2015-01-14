@@ -1,0 +1,30 @@
+#story-text {
+    display: none;
+}
+
+.blue-background {
+  background-color: skyblue;
+  color: black;
+}
+
+.green-background {
+  background-color: lightgreen;
+  color: black;
+}
+
+.black-background {
+  background-color: black; }
+
+.black-background label, .black-background h1 {
+  color: #FFFFFF;
+}
+
+.highlight {
+  border: 2px solid lightgrey;
+  background-color: lightpink;
+}
+
+.error {
+  display: none;
+  color: red;
+}

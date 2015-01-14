@@ -1,0 +1,65 @@
+.side-menu {
+  float: left;
+  width: 20%;
+  background-color: grey
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  width: 30%;
+}
+
+
+@media (max-width: 768px) {
+  .img-responsive {
+    display: none;
+  }
+
+}
+
+.col-xs-4 {
+  background-color: green;
+  height: 100%;
+}
+
+.col-xs-8 {
+  background-color: purple;
+  height: 100%;
+}
+
+body {
+  margin: 25px;
+}
+
+.lead {
+  background-color: grey;
+  margin-bottom: 0px;
+}
+
+.list-inline {
+  background-color: pink;
+}
+
+
+h1 {
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+/* columns of same height styles */
+.container-xs-height {
+  display:table;
+  padding-left:0px;
+  padding-right:0px;
+}
+.row-xs-height {
+  display:table-row;
+}
+.col-xs-height {
+  display:table-cell;
+  float:none;
+}

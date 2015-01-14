@@ -1,0 +1,9 @@
+.digital p,a {
+  background-color: red;
+  font-weight: bold;
+}
+
+.analog p,a {
+  background-color: yellow;
+  font-style: italic;
+}

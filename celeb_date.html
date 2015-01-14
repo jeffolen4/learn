@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/celeb_date.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-2.1.3.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+  <script src="js/celeb_date.js"></script>
+  <!--  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+-->
+<title>Celebrity Dating</title>
+</head>
+<body>
+  <div class = "container">
+
+    <div class = "row">
+      <h1>Which Celebrity should you be dating?</h1>
+    </div>
+
+    <div class = "row">
+      <form class="form-horizontal" id="form-info">
+        <h2>Personal Info</h2>
+        <div class="form-group">
+          <label class="col-sm-2" for="info-name">Your Name</label>
+          <input class="col-sm-10" type="text" class="form-control" id="info-name" placeholder="full name" data-edits="blank,short">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-info-name-blank">You must have a name in order to date a celebrity.</div>
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-info-name-short">You are not Cher or Madonna. Enter your full name.</div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2" for="info-age">Current age</label>
+          <input class="col-sm-10" type="text" class="form-control" id="info-age" placeholder="current age" data-edits="blank,numeric">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-info-age-blank">You must have been born in order to date a celebrity. Enter your current age.</div>
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-info-age-numeric">Your age must be a number. Please use base 10 numbers only.</div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2" for="info-movie">Favorite Movie</label>
+          <input class="col-sm-10" type="text" class="form-control" id="info-movie" placeholder="favorite movie" data-edits="blank">
+          <div class="col-sm-offset-2 col-sm-10 error" id="err-info-movie-blank">If don't have a favorite movie you cannot date a celebrity.</div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <input class="radio-inline" type="radio" class="form-control" id="male" name="sex" value="male" checked> Male
+            <input class="radio-inline" type="radio" class="form-control" id="female" name="sex" value="female"> Female
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+
+    <div class="row">
+      <h2 id="result-head">Your Result</h2>
+        <img class="result taylors float-image" src="img/taylors.jpg" width=300 height=300>
+        <p class="result taylors">You should date Taylor Swift.</p>
+
+        <img class="result justint float-image" src="img/justint.jpg" width=300 height=300>
+        <p class="result justint">You should date Justin Timberlake.</p>
+
+        <img class="result hallieb float-image" src="img/hallieb.jpg" width=300 height=300>
+        <p class="result hallieb">You should date Hallie Berry.</p>
+
+        <img class="result hughj float-image" src="img/hughj.jpg" width=300 height=300>
+        <p class="result hughj">You should date Hugh Jackman.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

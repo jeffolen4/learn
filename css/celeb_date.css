@@ -1,0 +1,12 @@
+.error {
+  display: none;
+  color: red;
+}
+
+.result, .taylors, #result-head {
+  display: none;
+}
+
+.float-image {
+  float: left;
+}
