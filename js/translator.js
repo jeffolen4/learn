@@ -34,6 +34,7 @@ $(document).ready(function() {
   var pigLatin = $("#translated");
   var transText = $("#untranslated");
 
+  // process translation upon submit of form
   form.submit( function (event) {
     if ( transText.val() === null || transText.val() === "" ) {
       pigLatin.val("");
