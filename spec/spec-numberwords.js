@@ -1,3 +1,5 @@
+var numberwords = appNumWord.numberwords;
+
 describe('numberwords', function() {
 
   it('should return a number between 0 and 20. Value: 1', function() {
@@ -50,6 +52,18 @@ describe('numberwords', function() {
 
   it('should return a number between 100000000 and 999999999. Value: 384159300', function() {
     numberwords("384159300").should.equal("three hundred eighty-four million one hundred fifty-nine thousand three hundred");
+  });
+
+  it('should correctly handle embedded zeros. Value: 1000000001', function() {
+    numberwords("1000000001").should.equal("one billion one");
+  });
+
+  it('should correctly handle embedded zeros. Value: 1000000050', function() {
+    numberwords("1000000050").should.equal("one billion fifty");
+  });
+
+  it('should correctly handle embedded zeros. Value: 1000000600', function() {
+    numberwords("1000000600").should.equal("one billion six hundred");
   });
 
 });
