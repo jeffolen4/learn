@@ -44,4 +44,12 @@ describe('numberwords', function() {
     numberwords("19173").should.equal("nineteen thousand one hundred seventy-three");
   });
 
+  it('should return a number between 100000 and 999999. Value: 159210', function() {
+    numberwords("159210").should.equal("one hundred fifty-nine thousand two hundred ten");
+  });
+
+  it('should return a number between 100000000 and 999999999. Value: 384159300', function() {
+    numberwords("384159300").should.equal("three hundred eighty-four million one hundred fifty-nine thousand three hundred");
+  });
+
 });
