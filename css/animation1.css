@@ -1,51 +1,67 @@
-.row {
-  width: 100px;
-  height: 100px;
-  background: red;
-  position: absolute;
-  -webkit-animation: myfirst 5s linear 2s infinite alternate; /* Chrome, Safari, Opera */
-  /* -webkit-animation: spin 2s linear .5s infinite alternate; /* Chrome, Safari, Opera */
-  animation: myfirst 5s linear 2s infinite alternate;
+body {
+  background: url("http://www.olen-inc.com/tardis_background_2.jpg");
+  background-size: 100% 125%;
+}
+
+#space {
+  margin-top: 225px;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  float: center;
+}
+
+#spaceship {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 435px;
+  position: relative;
+  float: center;
+
+  -webkit-transition: 3s linear;
 
 }
 
-/* Chrome, Safari, Opera */
-/*@-webkit-keyframes myfirst {
-  0%   {background:red; left:500px; top:500px; -webkit-transform: rotate(0deg); }
-  25%  {background:yellow; left:400px; top:400px; -webkit-transform: rotate(90deg); }
-  50%  {background:blue; left:500px; top:0px; -webkit-transform: rotate(180deg); }
-  75%  {background:green;left:0px; top:0px; -webkit-transform: rotate(270deg); }
-  100% {background:red; left:100px; top:0px; -webkit-transform: rotate(360deg); }
+#space:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
 
+/*#spaceship:hover {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
 }*/
 
-@-webkit-keyframes myfirst {
-  0%   {background:red; left:500px; top:500px; -webkit-transform: rotate(0deg); }
-  50%  {background:yellow; left:625px; top:460px; -webkit-transform: rotate(90deg); }
-  100%  {background:yellow; left:750px; top:500px; -webkit-transform: rotate(180deg); }
+.spin-fwd {
+  -webkit-animation-name: spin-fwd;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-style: preserve-3d;
 }
 
-@-webkit-keyframes spin {
+.spin-bkw {
+  -webkit-animation-name: spin-bkw;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-style: preserve-3d;
+}
+
+@-webkit-keyframes spin-bkw {
   from {
     -webkit-transform: rotate(0deg);
     } to {
-      -webkit-transform: rotate(360deg);
+      -webkit-transform: rotate(-360deg);
     }
   }
-/* Chrome, Safari, Opera */
-/*@-webkit-keyframes myfirst {
-  0%   {background:red; left:0px; top:0px;}
-  25%  {background:yellow; left:100px; top:100px;}
-  50%  {background:blue; left:200px; top:0px;}
-  75%  {background:green;left:100px; top:100px;}
-  100% {background:red; left:0px; top:0px;}
-} */
 
-/* Standard syntax */
-@keyframes myfirst {
-  0%   {background:red; left:0px; top:0px;}
-  25%  {background:yellow; left:200px; top:0px;}
-  50%  {background:blue; left:200px; top:200px;}
-  75%  {background:green; left:0px; top:200px;}
-  100% {background:red; left:0px; top:0px;}
-}
+  @-webkit-keyframes spin-fwd {
+    from {
+      -webkit-transform: rotate(0deg);
+      } to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
