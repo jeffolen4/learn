@@ -15,7 +15,7 @@ $(document).ready( function () {
         height: '-=' + shipj.height() / 2,
         width: '-=' + shipj.width() / 2
       });
-      space.css("padding", ( (spacePad + 80) + "px") );
+      space.css("padding", ( (space.width - shipj.width) - (shipj.width) + "px") );
     }
   }
 
