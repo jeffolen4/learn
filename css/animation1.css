@@ -4,6 +4,7 @@ body {
 }
 
 #space {
+  padding: 4px;
   margin-top: 225px;
   width: 400px;
   height: 500px;
