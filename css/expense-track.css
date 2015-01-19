@@ -1,0 +1,17 @@
+.error {
+  display: none;
+  color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+tfoot {
+  font-weight: bold;
+}

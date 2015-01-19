@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/expense-track.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-2.1.3.js"></script>
+  <script src="js/expense-track.js"></script>
+  <script src="js/expense-track-ui.js"></script>
+
+  <title>Track Expenses</title>
+</head>
+<body>
+  <!-- main container for page -->
+  <div class = "container">
+
+    <!-- main heading row - spans whole page -->
+    <div class = "row">
+      <h1>Track Expenses</h1>
+    </div>
+
+    <!-- column 1 - Expense entry form -->
+    <div class="row col-sm-6" id="entryform">
+      <h4>Expense entry</h4>
+      <form class="form-horizontal" id="form-Expense">
+        <div class="form-group">
+          <label class="col-sm-3" for="desc">Description</label>
+          <input class="col-sm-5" type="text" class="form-control" id="desc" placeholder="expense description">
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3" for="qty">Quantity</label>
+          <input class="col-sm-5" type="text" class="form-control" id="qty" placeholder="quantity">
+        </div>
+        <div class="form-group">
+          <label class="col-sm-3" for="price">Unit Price</label>
+          <input class="col-sm-5" type="text" class="form-control" id="price" placeholder="unit price">
+        </div>
+        <div id="buttons" class="col-sm-offset-2 col-sm-5">
+          <button class="btn btn-primary" id="btnadd" type="submit" name="submit">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- column 2 - table of expenses column -->
+    <div class="row col-sm-6">
+      <table class="table table-striped table-bordered" id="expense-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Extended Price</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td colspan="3">Grand Total:</td>
+            <td><span id="grandtotal"></span></td>
+          </tr>
+        </tfoot>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
