@@ -1,3 +1,7 @@
+.template {
+  display: none;
+}
+
 .error {
   display: none;
   color: red;
@@ -14,4 +18,14 @@ h4 {
 
 tfoot {
   font-weight: bold;
+}
+
+.categories > p {
+  margin-left: 15px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.categories > p:hover {
+  color: #FF00FF;
 }
