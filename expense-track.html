@@ -21,6 +21,7 @@
 
     <!-- column 1 - categories -->
     <div class="row col-sm-4">
+      <h4>Expense Categories</h4>
       <div class="categories">
       </div>
       <form class="form-horizontal" id="form-category">
@@ -50,7 +51,7 @@
           <label class="col-sm-3" for="price">Unit Price</label>
           <input class="col-sm-5" type="text" class="form-control" id="price" placeholder="unit price">
         </div>
-        <div id="buttons" class="col-sm-offset-2 col-sm-5">
+        <div id="buttons" class="expense-buttons col-sm-offset-2 col-sm-5">
         </div>
       </form>
     </div>
@@ -64,7 +65,7 @@
     <!-- template items for cloning only -->
 
     <!-- clone item for displaying expenses by category -->
-    <table class="table table-striped table-bordered template">
+    <table class="table table-striped table-bordered expense-tables template">
       <thead>
         <tr>
           <th>Description</th>
@@ -84,7 +85,7 @@
     </table>
 
     <!-- clone item for adding expenses to specific categories -->
-    <button class="btn btn-primary add-expense template" type="button">Add</button>
+    <button class="btn btn-primary expense-button template" type="button">Add</button>
 
   </div>
 
