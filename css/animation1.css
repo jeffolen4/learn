@@ -22,6 +22,8 @@ body {
   float: center;
 
   -webkit-transition: 3s linear;
+  animation-transition: 3s linear;
+/*  transform: 3s linear; */
 
 }
 
@@ -41,6 +43,12 @@ animation-play-state: paused;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 3s;
   -webkit-transform-style: preserve-3d;
+
+  animation-name: spin-fwd;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
 }
 
 .spin-bkw {
@@ -49,6 +57,22 @@ animation-play-state: paused;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 3s;
   -webkit-transform-style: preserve-3d;
+
+  animation-name: spin-bkw;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin-fwd {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-bkw {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
 }
 
 @-webkit-keyframes spin-bkw {

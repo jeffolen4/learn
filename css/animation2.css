@@ -1,0 +1,95 @@
+.container {
+  background: url("http://www.olen-inc.com/tardis_background_2.jpg");
+  background-size: 100% 100%;
+}
+
+#space {
+  padding: 4px;
+  margin-top: 100px;
+  width: 60%%px;
+  height: 70%;
+  position: relative;
+  float: center;
+}
+
+#spaceship {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 80%px;
+  position: relative;
+  float: center;
+
+  /*-webkit-transition: 3s linear;
+  animation-transition: 3s linear;*/
+/*  transform: 3s linear; */
+
+}
+
+/*#space:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}*/
+
+/*#spaceship:hover {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+
+.spin-fwd {
+  -webkit-animation-name: spin-fwd;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-style: preserve-3d;
+
+  animation-name: spin-fwd;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+}
+
+.spin-bkw {
+  -webkit-animation-name: spin-bkw;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-transform-style: preserve-3d;
+
+  animation-name: spin-bkw;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  transform-style: preserve-3d;
+}
+
+
+@keyframes spin-fwd {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-bkw {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes spin-bkw {
+  from {
+    -webkit-transform: rotate(0deg);
+    } to {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+
+
+  @-webkit-keyframes spin-fwd {
+    from {
+      -webkit-transform: rotate(0deg);
+      } to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+*/
