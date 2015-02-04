@@ -1,0 +1,117 @@
+html, body {
+  background: url("http://www.olen-inc.com/tardis_background_2.jpg") center no-repeat ;
+  background-size: 100% 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#dr_name {
+  height: 30px;
+  width: 90px;
+}
+.container {
+  color: white;
+}
+
+.column1 {
+  text-align: right;
+}
+
+.column2 {
+  text-align: center;
+}
+
+.column3 {
+  text-align: left;
+}
+
+#space {
+  padding: 4px;
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  float: center;
+}
+
+#spaceship {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  height: 400px;
+  position: relative;
+  float: center;
+
+  /*-webkit-transition: 9s linear;
+  animation-transition: 9s linear;
+  transform: 9s linear;*/
+
+}
+
+/*#space:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+#spaceship:hover {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}*/
+
+.spin-fwd {
+  -webkit-animation-name: spin-fwd;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 9s;
+  -webkit-transform-style: preserve-3d;
+
+  animation-name: spin-fwd;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+  transform-style: preserve-3d;
+}
+
+.spin-bkw {
+  -webkit-animation-name: spin-bkw;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 9s;
+  -webkit-transform-style: preserve-3d;
+
+  animation-name: spin-bkw;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 9s;
+  transform-style: preserve-3d;
+}
+
+
+@keyframes spin-fwd {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-bkw {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes spin-bkw {
+  from {
+    -webkit-transform: rotate(0deg);
+    } to {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+
+
+  @-webkit-keyframes spin-fwd {
+    from {
+      -webkit-transform: rotate(0deg);
+      } to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
